@@ -1,0 +1,79 @@
+body
+{background-image: url("images/space.jpg");
+
+}
+
+.sun
+{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin:auto;
+  background-color: #ffffaa;
+  border-radius: 50%;
+  box-shadow: 0 0 40px #ffffaa;
+  z-index:999;
+}
+
+
+
+.orbita {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;       
+    border: 5px solid red;
+    border-radius: 50% ;
+} 
+
+
+.container {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;       
+    border-radius: 50% ;
+    animation: moving 6s infinite linear;
+
+} 
+
+.container:hover{
+  animation-play-state:paused;
+}
+
+.mars {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  }
+
+@keyframes moving {
+    100% {transform: rotate(-360deg);}
+  }
+
+  .mars:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 500ms ease;
+}
+
+  .sun:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 500ms ease
+}
